@@ -51,9 +51,9 @@ run    cd ~ && dpkg -i elasticsearch-1.3.4.deb && rm elasticsearch-1.3.4.deb
 
 # grafana, kibana
 run	mkdir -p /www/data
-run cd /tmp && wget http://grafanarel.s3.amazonaws.com/grafana-1.8.1.tar.gz &&\
-	tar xzvf grafana-1.8.1.tar.gz && rm grafana-1.8.1.tar.gz &&\
-	mv /tmp/grafana-1.8.1 /www/data/grafana
+run cd /tmp && wget http://grafanarel.s3.amazonaws.com/grafana-1.9.0.tar.gz &&\
+	tar xzvf grafana-1.9.0.tar.gz && rm grafana-1.9.0.tar.gz &&\
+	mv /tmp/grafana-1.9.0 /www/data/grafana
 run cd /tmp && wget https://download.elasticsearch.org/kibana/kibana/kibana-3.1.1.tar.gz &&\
 	tar xzvf kibana-3.1.1.tar.gz && rm kibana-3.1.1.tar.gz &&\
 	mv /tmp/kibana-3.1.1 /www/data/kibana
