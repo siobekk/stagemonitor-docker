@@ -1,9 +1,9 @@
 #! /bin/sh
 
-docker kill stagemonitor
-docker rm stagemonitor
+sudo docker kill stagemonitor
+sudo docker rm stagemonitor
 
-docker run -d \
+sudo docker run -d \
 	-v /var/docker/stagemonitor/elastic:/var/lib/elasticsearch \
 	-v /var/docker/stagemonitor/graphite:/opt/graphite/storage/whisper \
 	-v /var/docker/stagemonitor/supervisor:/var/log/supervisor \
