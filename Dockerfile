@@ -20,7 +20,7 @@ run apt-get -y install  supervisor nginx-light git wget curl
 
 run apt-get -y install  python-django-tagging python-simplejson python-memcache \
 						python-ldap python-cairo python-django python-twisted   \
-						python-pysqlite2 python-support python-pip gunicorn
+						python-pysqlite2 python-support python-pip gunicorn 
 
 # fake fuse
 run  apt-get install libfuse2 &&\
@@ -34,6 +34,7 @@ run  apt-get install libfuse2 &&\
 
 # Graphite
 #run	pip install whisper
+run	pip install pytz
 #run	pip install --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/lib" carbon
 #run	pip install --install-option="--prefix=/var/lib/graphite" --install-option="--install-lib=/var/lib/graphite/webapp" graphite-web
 
